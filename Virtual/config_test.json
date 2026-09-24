@@ -1,0 +1,12 @@
+{
+  "serial_ports": {
+    "vehicle_sensor": "COM17",
+    "implement_sensor": "COM19",
+    "pda_bus": "COM20"
+  },
+  "baudrate": 9600,
+  "simulation": {
+    "hydraulic_tau": 0.8,
+    "angle_gain": 0.4
+  }
+}

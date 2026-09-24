@@ -1,0 +1,72 @@
+{
+    "devices": {
+        "implement": {
+            "name": "机具",
+            "port": "/dev/ttyUSB_IMPLEMENT",
+            "baudrate": 9600,
+            "address": 80
+        },
+        "vehicle": {
+            "name": "机身",
+            "port": "/dev/ttyUSB_VEHICLE",
+            "baudrate": 9600,
+            "address": 80
+        },
+        "pda": {
+            "port": "/dev/ttyUSB_PDA",
+            "baudrate": 9600
+        }
+    },
+    "tool": {
+        "type": "subsoiler",
+        "params": {
+            "L1": 1100.0,
+            "Lt": 800.0,
+            "Ht": 900.0,
+            "install_angle": 0.0,
+            "calibration": 1.0,
+            "zero_offset": 0.0
+        }
+    },
+    "tools": {
+        "subsoiler": {
+            "L1": 500.0,
+            "Lt": 300.0,
+            "Ht": 150.0,
+            "install_angle": 0.0,
+            "calibration": 1.0,
+            "zero_offset": 0.0
+        },
+        "rotary_tiller": {
+            "Larm": 400.0,
+            "R": 250.0,
+            "install_angle": 0.0,
+            "calibration": 1.0,
+            "zero_offset": 0.0
+        },
+        "plough": {
+            "Lbeam": 800.0,
+            "theta_install": 15.0,
+            "install_angle": 0.0,
+            "calibration": 1.0,
+            "zero_offset": 0.0
+        }
+    },
+    "monitor": {
+        "sensor_tool_status_interval": 10,
+        "soil_hardness_mpa": 2.5,
+        "default_speed_kph": 6.0,
+        "height_send_interval": 3,
+        "rls_forget_factor": 0.98,
+        "rls_delta": 100.0,
+        "rls_ridge_penalty": 1e-4,
+        "window_seconds": 10.0,
+        "min_samples": 3,
+        "send_interval": 5,
+        "sleep_interval": 1.0,
+        "log_enabled": true,
+        "log_dir": "./logs",
+        "model_save_dir": "./models",
+        "model_save_interval": 10
+    }
+}
